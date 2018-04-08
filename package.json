@@ -1,0 +1,38 @@
+{
+  "name": "tsaxe",
+  "version": "1.0.0",
+  "description": "TypeScript library for controlled proxy acccessors",
+  "types": "index.d.ts",
+  "typescript": {
+    "definition": "index.d.ts"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint-code": "node_modules/.bin/tslint -c ./tslint.json -p ./tsconfig.json --type-check",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoEasy/tsaxe.git"
+  },
+  "keywords": [
+    "proxy",
+    "typescript"
+  ],
+  "author": "Vladimir Sannikov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SoEasy/tsaxe/issues"
+  },
+  "homepage": "https://github.com/SoEasy/tsaxe#readme",
+  "devDependencies": {
+    "dts-bundle": "0.7.2",
+    "ts-loader": "2.3.2",
+    "ts-node": "3.3.0",
+    "tslint": "5.9.1",
+    "typescript": "2.8.1",
+    "webpack": "4.2.0"
+  }
+}

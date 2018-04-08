@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "es5",
+    "removeComments": false,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "es2016.array.include",
+      "es2017",
+      "es7"
+    ],
+
+    "baseUrl": "./src",
+    "paths": {
+      "*": [
+        "*"
+      ]
+    }
+  },
+
+  "exclude": [
+    "node_modules",
+    "lib"
+  ]
+}

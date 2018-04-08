@@ -1,0 +1,115 @@
+{
+  "extends": ["tslint:latest", "tslint-eslint-rules"],
+  "defaultSeverity": "error",
+  "rules": {
+    "one-line": [true, "check-open-brace", "check-else"],
+    "no-implicit-dependencies": false,
+    "no-this-assignment": [
+      true,
+      {
+        "allowed-names": ["^self$"],
+        "allow-destructuring": true
+      }
+    ],
+    "array-type": {
+      "options": ["generic"]
+    },
+    "arrow-parens": {
+      "options": ["ban-single-arg-parens"]
+    },
+    "arrow-return-shorthand": true,
+    "curly": {
+      "options": ["ignore-same-line"]
+    },
+    "indent": {
+      "options": ["spaces", 2]
+    },
+    "interface-name": false,
+    "max-line-length": false,
+    "member-access": {
+      "options": ["no-public"]
+    },
+    "member-ordering": {
+      "options": ["private-before-public", "static-before-instance", "variables-before-functions"]
+    },
+    "no-consecutive-blank-lines": {
+      "options": [1]
+    },
+    "no-invalid-this": {
+      "options": ["check-function-in-method"]
+    },
+    "no-unused-expression": {
+      "options": ["allow-fast-null-checks"]
+    },
+    "no-unused-variable": [true, {"ignore-pattern": "^_"}],
+    "object-literal-key-quotes": {
+      "options": ["as-needed"]
+    },
+    "quotemark": {
+      "options": ["single", "avoid-template", "avoid-escape"]
+    },
+    "semicolon": {
+      "options": ["always", "ignore-bound-class-methods"]
+    },
+    "trailing-comma": {
+      "options": {
+        "multiline": "never",
+        "singleline": "never"
+      }
+    },
+    "typedef": {
+      "options": ["call-signature", "parameter", "property-declaration", "member-variable-declaration"]
+    },
+    "variable-name": {
+      "options": ["ban-keywords", "check-format", "allow-pascal-case", "allow-leading-underscore"]
+    },
+    "whitespace": {
+      "options": [
+        "check-branch",
+        "check-decl",
+        "check-operator",
+        "check-module",
+        "check-separator",
+        "check-type",
+        "check-preblock"
+      ]
+    },
+    "prefer-function-over-method": {
+      "options": ["allow-public", "allow-protected"]
+    },
+    "no-inferrable-types": {
+      "options": ["ignore-params", "ignore-properties"]
+    },
+    "no-multi-spaces": true,
+    "no-extra-semi": true,
+    "no-shadowed-variable": false,
+    "no-var-requires": false,
+    "object-curly-spacing": {
+      "options": ["always"]
+    },
+    "array-bracket-spacing": {
+      "options": ["never"]
+    },
+    "block-spacing": {
+      "options": ["always"]
+    },
+    "brace-style": [
+      true,
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "ter-max-len": [
+      true,
+      {
+        "code": 120,
+        "ignoreComments": true,
+        "ignoreImports": true
+      }
+    ],
+    "no-console": [true, "log", "info", "table"],
+    "no-debugger": true,
+    "no-submodule-imports": false
+  }
+}
